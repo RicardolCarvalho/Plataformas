@@ -107,7 +107,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - git-committers:
-      repository: hsandmann/hsandmann.github.com
+      repository: insper/platform
       branch: main
       token: !ENV MKDOCS_GIT_COMMITTERS_APIKEY
   - search

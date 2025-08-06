@@ -15,13 +15,6 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
 
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      primary: grey
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default 
@@ -30,13 +23,6 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      primary: grey
-      scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to system preference
   features:
     - content.code.copy
     - content.code.select
@@ -63,7 +49,8 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
   # logo: assets/images/devops.png
-  logo: assets/images/insper.svg
+  # logo: assets/images/insper.svg
+  logo: assets/images/logo.png
 
 markdown_extensions:
   - admonition
@@ -132,7 +119,7 @@ extra_css:
 
 nav:
   - Ementa: index.md
-  - 2025.1: versions/2025.1.md
+  - 2025.2: versions/2025.2.md
   - Checkpoints:
     - 1. CRUD: checkpoints/1/checkpoint.md
     - 2. Gateway: checkpoints/2/checkpoint.md

@@ -120,12 +120,25 @@ extra_css:
 nav:
   - Ementa: index.md
   - 2025.2: versions/2025.2.md
+
+  - Classes:
+    - 1. Distributed Systems: classes/distributed-systems/distributed-systems.md
+    - 2. Microservices: classes/microservices/microservices.md
+    - 3. Containerization: classes/containerization.md
+    - 4. APIs: classes/apis.md
+    - 5. Architectures: classes/architectures/architectures.md
+    - 6. DevOps: classes/devops.md
+    - 7. Cloud: classes/cloud.md
+    - 8. Orchestration: classes/orchestration.md
+    - 9. PaaS: classes/paas.md
+
   - Checkpoints:
     - 1. CRUD: checkpoints/1/checkpoint.md
     - 2. Gateway: checkpoints/2/checkpoint.md
     - 3. Security: checkpoints/3/checkpoint.md
     - 4. DevOps: checkpoints/4/checkpoint.md
     - 5. Orchestration: checkpoints/5/checkpoint.md
+  
   - Exercises:
     - Individual:
       - 1. Exchange API: exercises/exercise1.md
@@ -135,13 +148,12 @@ nav:
       - 5. MiniKube: exercises/exercise5.md
       - Bottlenecks: exercises/bottlenecks/bottlenecks.md
     - Project: exercises/project/project.md
-  - Concepts:
-    - Microservices: concepts/microservices.md
-    - Architectures: concepts/architectures.md
+    
   - Versions:
     - 2025.2: ./versions/2025.2.md
     - 2025.1: ./versions/2025.1.md
     - 2024.1: ./versions/2024.1.md
+  
   # - Handout:
   #   - Microservices:
   #     - Roadmap: ./handout/microservices/roadmap.md
@@ -212,10 +224,12 @@ nav:
   #   - Terraform: ./cloud/terraform.md
   # - Business:
   #   - Concepts: ./business/concepts.md
+  
   - Appendix:
     - REST vs GraphQL: ./appendix/rest-vs-graphql.md
     - Versioning REST APIs: ./appendix/versioning-rest-apis.md
     - RSA Algorithm: ./appendix/rsa.md
     - Oh My Zsh: ./appendix/ohmyzsh.md
     - Others: ./appendix/others.md
+  
   - Disclaimer: ./disclaimer.md

@@ -19,6 +19,12 @@
 
 ## Grade
 
+
+```python exec="1" html="1"
+--8<-- "docs/versions/2025.2/grade.py"
+```
+
+
 === ":material-target: Final"
 
     $$
@@ -64,14 +70,15 @@
     | CI/CD | Jenkins | 10% |
     | Custos | Análise de custos | 15% |
     | PaaS | Plano de uso da plataforma | 15% |
-    | Apresentação | Storytelling | 20% |
+    | Apresentação | Storytelling e documentação | 20% |
 
+    !!! danger "Entrega"
+
+        - Trabalho em grupo deve ser documentado no GitHub. Um template está disponível para auxiliar na documentação: [template de entrega](https://hsandmann.github.io/documentation.template/){target="_blank"}.
 
 ## Planning
 
-<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQycwZoYTbD7CL91afM1zdJfyEPCY_mnh1HfNpVfpzDA4r6lGaE-MJF2CtsRiKubfjxyEVasa9e5o55/pubhtml?gid=1658402287&single=true&widget=true&headers=false" width="100%" height="600px"></iframe> -->
-
-
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTLC6eG1IMbnD1AQ3NgswsscD2y-H5vHZqyun_nhtPWY3auFOQznEslwYBF0dD5Uck9x2k6Fmo6rKw/pubhtml?gid=1658402287&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600px"></iframe>
 
 <!-- ## Repositories -->
 

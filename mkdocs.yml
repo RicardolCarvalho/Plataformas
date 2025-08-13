@@ -102,6 +102,7 @@ plugins:
       minify_html: true
   - badges
   - markdown-exec
+  - mkdocs-pdf
   - render_swagger:
       allow_arbitrary_locations : true
   - termynal:
@@ -119,18 +120,18 @@ extra_css:
 
 nav:
   - Ementa: index.md
-  - 2025.2: versions/2025.2.md
+  - 2025.2: versions/2025.2/main.md
 
   - Classes:
-    - 1. Distributed Systems: classes/distributed-systems/distributed-systems.md
-    - 2. Microservices: classes/microservices/microservices.md
-    - 3. Containerization: classes/containerization.md
-    - 4. APIs: classes/apis.md
-    - 5. Architectures: classes/architectures/architectures.md
-    - 6. DevOps: classes/devops.md
-    - 7. Cloud: classes/cloud.md
-    - 8. Orchestration: classes/orchestration.md
-    - 9. PaaS: classes/paas.md
+    - 1. Distributed Systems: classes/distributed-systems/main.md
+    - 2. Microservices: classes/microservices/main.md
+    - 3. Containerization: classes/containerization/main.md
+    - 4. APIs: classes/api/main.md
+    - 5. Architectures: classes/architectures/main.md
+    - 6. DevOps: classes/devops/main.md
+    - 7. Cloud: classes/cloud/main.md
+    - 8. Orchestration: classes/orchestration/main.md
+    - 9. PaaS: classes/paas/main.md
 
   - Checkpoints:
     - 1. CRUD: checkpoints/1/checkpoint.md
@@ -150,9 +151,10 @@ nav:
     - Project: exercises/project/project.md
     
   - Versions:
-    - 2025.2: ./versions/2025.2.md
-    - 2025.1: ./versions/2025.1.md
-    - 2024.1: ./versions/2024.1.md
+    - Terms and Conditions: versions/terms-and-conditions.md
+    - 2025.2: versions/2025.2/main.md
+    - 2025.1: versions/2025.1/main.md
+    - 2024.1: versions/2024.1/main.md
   
   # - Handout:
   #   - Microservices:

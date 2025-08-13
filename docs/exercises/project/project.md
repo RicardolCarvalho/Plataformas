@@ -1,5 +1,4 @@
 
-
 | Tarefas | Descrição | Peso |
 |-|-|-:|
 | AWS | Configurar AWS | 5% |
@@ -8,8 +7,11 @@
 | CI/CD | Jenkins | 10% |
 | Custos | Análise de custos | 15% |
 | PaaS | Plano de uso da plataforma | 15% |
-| Apresentação | Storytelling | 20% |
+| Apresentação | Storytelling e documentação | 20% |
 
+!!! danger "Entrega"
+
+    - Trabalho em grupo deve ser documentado no GitHub. Um template está disponível para auxiliar na documentação: [template de entrega](https://hsandmann.github.io/documentation.template/){target="_blank"}.
 
 ## Configuração do AWS
 

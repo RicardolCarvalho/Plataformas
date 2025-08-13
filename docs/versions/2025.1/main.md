@@ -1,4 +1,4 @@
-![Class 2025.1](../assets/images/2025.1/2025.1.jpg){ .rounded-corners }
+![Class 2025.1](2025.1.jpg){ .rounded-corners }
 
 ## Instructor
 

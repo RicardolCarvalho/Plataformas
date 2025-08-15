@@ -228,6 +228,7 @@ nav:
   #   - Concepts: ./business/concepts.md
   
   - Appendix:
+    - Development Setup: ./appendix/development-setup/main.md
     - REST vs GraphQL: ./appendix/rest-vs-graphql.md
     - Versioning REST APIs: ./appendix/versioning-rest-apis.md
     - RSA Algorithm: ./appendix/rsa.md

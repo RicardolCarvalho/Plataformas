@@ -1,8 +1,8 @@
 # REST vs GraphQL
 
 <figure markdown>
-  ![REST vs GraphQL](https://github.com/ByteByteGoHq/system-design-101/raw/main/images/graphQL.jpg){ width="100%" }
-  <figcaption><i>Source: <a href="https://github.com/ByteByteGoHq/system-design-101?tab=readme-ov-file#rest-api-vs-graphql" target="_blank">System Design 101 - REST API vs. GraphQL</a></i></figcaption>
+  ![REST vs GraphQL](https://assets.bytebytego.com/diagrams/0126-api-style-compare.jpg){ width="100%" }
+  <figcaption><i>Source: <a href="https://bytebytego.com/guides/soap-vs-rest-vs-graphql-vs-rpc/" target="_blank">System Design 101 - REST API vs. GraphQL</a></i></figcaption>
 </figure>
 
 

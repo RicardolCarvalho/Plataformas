@@ -123,9 +123,9 @@ flowchart LR
           - 5432:5432 #(2)!
     ```
 
-    1.  Caso a variável de ambiente `POSTGRES_DB` não exista ou seja nula - não seja definida no arquivo `.env` - o valor padrão será `projeto`. Vide [documentação](https://docs.docker.com/reference/compose-file/interpolation/){target='_blank'}.
+    1. If the `POSTGRES_DB` environment variable does not exist or is null - if it is not defined in the `.env` file - the default value will be `project`. See [documentation](https://docs.docker.com/reference/compose-file/interpolation/){target='_blank'}.
 
-    2. Aqui é feito um túnel da porta 5432 do container do banco de dados para a porta 5432 do host (no caso localhost). Em um ambiente de produção, essa porta não deve ser exposta, pois ninguém de fora do compose deveria acessar o banco de dados diretamente.
+    2. Here, a tunnel is created from the database container's port 5432 to the host's port 5432 (in this case, localhost). In a production environment, this port should not be exposed, as no one outside the compose should access the database directly.
 
     ``` { .env title=".env" }
     POSTGRES_DB=superproject

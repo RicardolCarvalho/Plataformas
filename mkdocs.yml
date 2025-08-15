@@ -124,8 +124,8 @@ nav:
 
   - Classes:
     - 1. Distributed Systems: classes/distributed-systems/main.md
-    - 2. Microservices: classes/microservices/main.md
-    - 3. Containerization: classes/containerization/main.md
+    - 2. Containerization: classes/containerization/main.md
+    - 3. Microservices: classes/microservices/main.md
     - 4. APIs: classes/api/main.md
     - 5. Architectures: classes/architectures/main.md
     - 6. DevOps: classes/devops/main.md

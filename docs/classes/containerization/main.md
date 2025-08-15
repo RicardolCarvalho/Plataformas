@@ -59,9 +59,10 @@ In summary, Docker containers and virtual machines have different levels of abst
 
 ## Docker Compose
 
-Docker Compose is a tool for defining and running multi-container Docker applications. With Compose, you can use a YAML file to configure your application's services, networks, and volumes, making it easier to manage complex applications.
+Docker Compose is a tool for defining and running multi-container Docker applications. With Compose, you can use a YAML file to configure your application's services, networks, and volumes, making it easier to manage complex applications. All the services defined in the `compose.yaml` file can be started with a single command, allowing you to run multiple containers as a single application.
 
-```yaml
+``` {.yaml title="compose.yaml"}
+name: myapp
 services:
   web:
     image: nginx
@@ -80,20 +81,107 @@ services:
       POSTGRES_PASSWORD: password
 ```
 
-To start the application, run:
+To run the application defined in the `compose.yaml` file, you can use the following command:
 
-``` dockerfile
-FROM openjdk:17-alpine
-VOLUME /tmp
-ARG JAR_FILE=target/gateway-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+``` shell
+docker compose up -d --build # (1)!
 ```
 
-[^1]: [Docker vs. Virtual Machines: Differences You Should Know](https://cloudacademy.com/blog/docker-vs-virtual-machines-differences-you-should-know/)
+1. `-d` runs the containers in detached mode, allowing them to run in the background.<br>
+`--build` forces a rebuild of the images before starting the containers.
+
+This command will start all the services defined in the `compose.yaml` file, creating a subnetwork for them to communicate with each other. You can then access the web service on port 80 of your host machine. The illustration below shows how the services are connected:
+
+``` mermaid
+flowchart LR
+    user[User] -->|HTTP| web[Web]
+    subgraph myapp [172.17.0.0/16]
+        web[Web]
+        app[App]
+        db[(Database)]
+    end
+    web -->|API| app
+    app -->|Connection| db
+```
+
+!!! tip "Environment Variables"
+    
+    Docker Compose allows you to define environment variables in the `compose.yaml` file or in a separate `.env` file. This is useful for passing configuration values, such as database credentials or API keys, to your containers without hardcoding them in the Dockerfile or application code.
+
+    Therefore, **to facilitate the correction**, you can pass the environment variables directly in the `compose.yaml`, which Docker Compose will automatically read and use when starting the containers. Example:
+
+    ``` { .yaml title="compose.yaml" }
+    name: app
+
+      db:
+        image: postgres:17
+        environment:
+          POSTGRES_DB: ${POSTGRES_DB:-projeto} # (1)!
+          POSTGRES_USER: ${POSTGRES_USER:-projeto}
+          POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-projeto}
+        ports:
+          - 5432:5432 #(2)!
+    ```
+
+    1.  Caso a variável de ambiente `POSTGRES_DB` não exista ou seja nula - não seja definida no arquivo `.env` - o valor padrão será `projeto`. Vide [documentação](https://docs.docker.com/reference/compose-file/interpolation/){target='_blank'}.
+
+    2. Aqui é feito um túnel da porta 5432 do container do banco de dados para a porta 5432 do host (no caso localhost). Em um ambiente de produção, essa porta não deve ser exposta, pois ninguém de fora do compose deveria acessar o banco de dados diretamente.
+
+    ``` { .env title=".env" }
+    POSTGRES_DB=superproject
+    POSTGRES_USER=myproject
+    POSTGRES_PASSWORD=S3cr3t
+    ```
+
+    When you run `docker compose up`, Docker Compose will automatically read the `.env` file in the same directory as the `compose.yaml` file and use the defined environment variables. If a variable is not defined in the `.env` file, it will use the default value specified in the `compose.yaml` file.
+
+    !!! warning "Security"
+
+        **NEVER** store sensitive information, such as passwords or API keys, directly in the `compose.yaml` file or in the code. Instead, use environment variables to pass sensitive information securely.
+
+        Different environments (development, testing, production) can have different `.env` files, allowing you to manage configurations without changing the code or the `compose.yaml` file.
+
+        **NEVER** store credentials in the repository, even if it is a private repository. That is, **NEVER** place a `.env` file in the repository (GitHub).
+
+        **NEVER** leave ports exposed in production unless absolutely necessary.
+
+## Additional Information
+
+### Private Networks
+
+Private networks are networks that are not directly accessible from the public internet. They are used to isolate resources and provide a secure environment for communication between devices. In the context of Docker, private networks allow containers to communicate with each other without exposing their services to the outside world.
+
+Private networks are defined by specific IP address ranges that are reserved for private use. These ranges are not routable on the public internet, ensuring that devices within a private network can communicate securely without interference from external networks.
+
+### Reserved IPv4 Addresses [^5]
+
+| Address block (CIDR)| Address range | Number of addresses | Scope | Description
+|----------------------|----------------|--------------------:|-------|-------------
+| 0.0.0.0/8            | 0.0.0.0–0.255.255.255 | 16777216 | Software | Current (local, "this") network |
+| 10.0.0.0/8           | 10.0.0.0–10.255.255.255 | 16777216 | Private network | Used for local communications within a private network |
+| 100.64.0.0/10       | 100.64.0.0–100.127.255.255 | 4194304 | Private network | Shared address space for communications between a service provider and its subscribers when using a carrier-grade NAT |
+| 127.0.0.0/8         | 127.0.0.0–127.255.255.255 | 16777216 | Host | Used for loopback addresses to the local host |
+| 169.254.0.0/16      | 169.254.0.0–169.254.255.255 | 65536 | Subnet | Used for link-local addresses[5] between two hosts on a single link when no IP address is otherwise specified, such as would have normally been retrieved from a DHCP server |
+| 172.16.0.0/12      | 172.16.0.0–172.31.255.255 | 1048576 | Private network | Used for local communications within a private network |
+| 192.0.0.0/24       | 192.0.0.0–192.0.0.255 | 256 | Private network | IETF Protocol Assignments, DS-Lite (/29) |
+| 192.0.2.0/24       | 192.0.2.0–192.0.2.255 | 256 | Documentation | Assigned as TEST-NET-1, documentation and examples |
+| 192.88.99.0/24     | 192.88.99.0–192.88.99.255 | 256 | Internet | Reserved. Formerly used for IPv6 to IPv4 relay[8] (included IPv6 address block 2002::/16). |
+| 192.168.0.0/16     | 192.168.0.0–192.168.255.255 | 65536 | Private network | Used for local communications within a private network |
+| 198.18.0.0/15      | 198.18.0.0–198.19.255.255 | 131072 | Private network | Used for benchmark testing of inter-network communications between two separate subnets |
+| 198.51.100.0/24    | 198.51.100.0–198.51.100.255 | 256 | Documentation | Assigned as TEST-NET-2, documentation and examples |
+| 203.0.113.0/24     | 203.0.113.0–203.0.113.255 | 256 | Documentation | Assigned as TEST-NET-3, documentation and examples |
+| 224.0.0.0/4        | 224.0.0.0–239.255.255.255 | 268435456 | Internet | In use for multicast[10] (former Class D network) |
+| 233.252.0.0/24     | 233.252.0.0–233.252.0.255 | 256 | Documentation | Assigned as MCAST-TEST-NET, documentation and examples (This is part of the above multicast space.) |
+| 240.0.0.0/4       | 240.0.0.0–255.255.255.254 | 268435455 | Internet | Reserved for future use[12] (former Class E network) |
+| 255.255.255.255/32 | 255.255.255.255           | 1   | Subnet      | Reserved for the "limited broadcast" destination address |
 
 
+[^1]: [Docker vs. Virtual Machines: Differences You Should Know](https://cloudacademy.com/blog/docker-vs-virtual-machines-differences-you-should-know/){:target="_blank"}
 
-https://docs.docker.com/engine/install/
+[^2]: [Docker Networking](https://docs.docker.com/engine/network/){:target="_blank"}
 
-https://www.docker.com/blog/how-to-use-your-own-registry-2/
+[^3]: [RFC 1918 - Address Allocation for Private Internets](https://datatracker.ietf.org/doc/html/rfc1918){:target="_blank"}
+
+[^4]: [Private Network](https://en.wikipedia.org/wiki/Private_network){:target="_blank"}
+
+[^5]: [Reserved IP Addresses](https://en.wikipedia.org/wiki/Reserved_IP_addresses){:target="_blank"}

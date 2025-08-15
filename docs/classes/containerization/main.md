@@ -151,9 +151,13 @@ flowchart LR
 
 Private networks are networks that are not directly accessible from the public internet. They are used to isolate resources and provide a secure environment for communication between devices. In the context of Docker, private networks allow containers to communicate with each other without exposing their services to the outside world.
 
+![NAT](nat.png){ width="100%" }
+
 Private networks are defined by specific IP address ranges that are reserved for private use. These ranges are not routable on the public internet, ensuring that devices within a private network can communicate securely without interference from external networks.
 
 ### Reserved IPv4 Addresses [^5]
+
+#### General Reserved IPv4 Addresses
 
 | Address block (CIDR)| Address range | Number of addresses | Scope | Description
 |----------------------|----------------|--------------------:|-------|-------------
@@ -174,6 +178,16 @@ Private networks are defined by specific IP address ranges that are reserved for
 | 233.252.0.0/24     | 233.252.0.0–233.252.0.255 | 256 | Documentation | Assigned as MCAST-TEST-NET, documentation and examples (This is part of the above multicast space.) |
 | 240.0.0.0/4       | 240.0.0.0–255.255.255.254 | 268435455 | Internet | Reserved for future use[12] (former Class E network) |
 | 255.255.255.255/32 | 255.255.255.255           | 1   | Subnet      | Reserved for the "limited broadcast" destination address |
+
+
+#### Private IPv4 Addresses [^3]
+
+| Address block (CIDR) | Address range | Number of addresses | Scope | Description |
+|----------------------|----------------|--------------------:|-------|-------------
+| 10.0.0.0/8           | 10.0.0.0–10.255.255.255 | 16777216 | Private network | Used for local communications within a private network |
+| 172.16.0.0/12      | 172.16.0.0–172.31.255.255 | 1048576 | Private network | Used for local communications within a private network |
+| 192.168.0.0/16     | 192.168.0.0–192.168.255.255 | 65536 | Private network | Used for local communications within a private network |
+
 
 
 [^1]: [Docker vs. Virtual Machines: Differences You Should Know](https://cloudacademy.com/blog/docker-vs-virtual-machines-differences-you-should-know/){:target="_blank"}

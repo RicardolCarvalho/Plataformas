@@ -151,7 +151,37 @@ flowchart LR
 
 Private networks are networks that are not directly accessible from the public internet. They are used to isolate resources and provide a secure environment for communication between devices. In the context of Docker, private networks allow containers to communicate with each other without exposing their services to the outside world.
 
-![NAT](nat.png){ width="100%" }
+<center>
+``` mermaid
+---
+title: Network Address Translation (NAT)
+---
+flowchart TB
+    host1@{ shape: docs, label: "Host 1"} ---|Public IP| internet([Internet])
+    host2@{ shape: docs, label: "Host 2"} ---|Public IP| internet([Internet])
+    host3@{ shape: docs, label: "Host 3"} ---|Public IP| internet([Internet])
+    internet([Internet]) ---|Public IP| router1((Border Router<br>NAT<br>10.0.0.0/8))
+    router1 ---|Private IP| device1([Device 1])
+    router1 ---|Private IP| device2([Device 2])
+    router1 ---|Private IP| device3([Device 3])
+    router1 ---|Private IP| router2((Router<br>NAT<br>172.16.0.0/12))
+    router2 ---|Private IP| router3((Router<br>NAT<br>192.168.0.0/16))
+    router2 ---|Private IP| router4((Router<br>NAT<br>192.168.0.0/16))
+    router2 ---|Private IP| device4([Device 4])
+    router2 ---|Private IP| device5([Device 5])
+    router3 ---|Private IP| device6([Device 6])
+    router3 ---|Private IP| device7([Device 7])
+    router4 ---|Private IP| device8([Device 8])
+    router4 ---|Private IP| device9([Device 9])
+    classDef internet fill:#aaf
+    classDef router fill:#faa
+    classDef device fill:#afa
+    class internet internet
+    class router1,router2,router3,router4 router
+    class device1,device2,device3,device4,device5,device6,device7,device8,device9 device
+```
+<i>The diagram illustrates a network setup with multiple routers and devices, where each router uses Network Address Translation (NAT) to manage private IP addresses. The internet is connected to the first router (the border router), which has a public IP address, while the other routers and devices use private IP addresses within their respective subnets.</i>
+</center>
 
 Private networks are defined by specific IP address ranges that are reserved for private use. These ranges are not routable on the public internet, ensuring that devices within a private network can communicate securely without interference from external networks.
 
@@ -161,22 +191,22 @@ Private networks are defined by specific IP address ranges that are reserved for
 
 | Address block (CIDR)| Address range | Number of addresses | Scope | Description
 |----------------------|----------------|--------------------:|-------|-------------
-| 0.0.0.0/8            | 0.0.0.0–0.255.255.255 | 16777216 | Software | Current (local, "this") network |
-| 10.0.0.0/8           | 10.0.0.0–10.255.255.255 | 16777216 | Private network | Used for local communications within a private network |
-| 100.64.0.0/10       | 100.64.0.0–100.127.255.255 | 4194304 | Private network | Shared address space for communications between a service provider and its subscribers when using a carrier-grade NAT |
-| 127.0.0.0/8         | 127.0.0.0–127.255.255.255 | 16777216 | Host | Used for loopback addresses to the local host |
-| 169.254.0.0/16      | 169.254.0.0–169.254.255.255 | 65536 | Subnet | Used for link-local addresses between two hosts on a single link when no IP address is otherwise specified, such as would have normally been retrieved from a DHCP server |
-| 172.16.0.0/12      | 172.16.0.0–172.31.255.255 | 1048576 | Private network | Used for local communications within a private network |
-| 192.0.0.0/24       | 192.0.0.0–192.0.0.255 | 256 | Private network | IETF Protocol Assignments, DS-Lite (/29) |
-| 192.0.2.0/24       | 192.0.2.0–192.0.2.255 | 256 | Documentation | Assigned as TEST-NET-1, documentation and examples |
-| 192.88.99.0/24     | 192.88.99.0–192.88.99.255 | 256 | Internet | Reserved. Formerly used for IPv6 to IPv4 relay (included IPv6 address block 2002::/16). |
-| 192.168.0.0/16     | 192.168.0.0–192.168.255.255 | 65536 | Private network | Used for local communications within a private network |
-| 198.18.0.0/15      | 198.18.0.0–198.19.255.255 | 131072 | Private network | Used for benchmark testing of inter-network communications between two separate subnets |
-| 198.51.100.0/24    | 198.51.100.0–198.51.100.255 | 256 | Documentation | Assigned as TEST-NET-2, documentation and examples |
-| 203.0.113.0/24     | 203.0.113.0–203.0.113.255 | 256 | Documentation | Assigned as TEST-NET-3, documentation and examples |
-| 224.0.0.0/4        | 224.0.0.0–239.255.255.255 | 268435456 | Internet | In use for multicast (former Class D network) |
-| 233.252.0.0/24     | 233.252.0.0–233.252.0.255 | 256 | Documentation | Assigned as MCAST-TEST-NET, documentation and examples (This is part of the above multicast space.) |
-| 240.0.0.0/4       | 240.0.0.0–255.255.255.254 | 268435455 | Internet | Reserved for future use (former Class E network) |
+| 0.0.0.0/8            | 0.0.0.0<br>0.255.255.255 | 16.777.216 | Software | Current (local, "this") network |
+| 10.0.0.0/8           | 10.0.0.0<br>10.255.255.255 | 16.777.216 | Private network | Used for local communications within a private network |
+| 100.64.0.0/10       | 100.64.0.0<br>100.127.255.255 | 4.194.304 | Private network | Shared address space for communications between a service provider and its subscribers when using a carrier-grade NAT |
+| 127.0.0.0/8         | 127.0.0.0<br>127.255.255.255 | 16.777.216 | Host | Used for loopback addresses to the local host |
+| 169.254.0.0/16      | 169.254.0.0<br>169.254.255.255 | 65.536 | Subnet | Used for link-local addresses between two hosts on a single link when no IP address is otherwise specified, such as would have normally been retrieved from a DHCP server |
+| 172.16.0.0/12      | 172.16.0.0<br>172.31.255.255 | 1.048.576 | Private network | Used for local communications within a private network |
+| 192.0.0.0/24       | 192.0.0.0<br>192.0.0.255 | 256 | Private network | IETF Protocol Assignments, DS-Lite (/29) |
+| 192.0.2.0/24       | 192.0.2.0<br>192.0.2.255 | 256 | Documentation | Assigned as TEST-NET-1, documentation and examples |
+| 192.88.99.0/24     | 192.88.99.0<br>192.88.99.255 | 256 | Internet | Reserved. Formerly used for IPv6 to IPv4 relay (included IPv6 address block 2002::/16). |
+| 192.168.0.0/16     | 192.168.0.0<br>192.168.255.255 | 65.536 | Private network | Used for local communications within a private network |
+| 198.18.0.0/15      | 198.18.0.0<br>198.19.255.255 | 131.072 | Private network | Used for benchmark testing of inter-network communications between two separate subnets |
+| 198.51.100.0/24    | 198.51.100.0<br>198.51.100.255 | 256 | Documentation | Assigned as TEST-NET-2, documentation and examples |
+| 203.0.113.0/24     | 203.0.113.0<br>203.0.113.255 | 256 | Documentation | Assigned as TEST-NET-3, documentation and examples |
+| 224.0.0.0/4        | 224.0.0.0<br>239.255.255.255 | 268.435.456 | Internet | In use for multicast (former Class D network) |
+| 233.252.0.0/24     | 233.252.0.0<br>233.252.0.255 | 256 | Documentation | Assigned as MCAST-TEST-NET, documentation and examples (This is part of the above multicast space.) |
+| 240.0.0.0/4       | 240.0.0.0<br>255.255.255.254 | 268.435.455 | Internet | Reserved for future use (former Class E network) |
 | 255.255.255.255/32 | 255.255.255.255           | 1   | Subnet      | Reserved for the "limited broadcast" destination address |
 
 
@@ -184,9 +214,9 @@ Private networks are defined by specific IP address ranges that are reserved for
 
 | Address block (CIDR) | Address range | Number of addresses | Scope | Description |
 |----------------------|----------------|--------------------:|-------|-------------
-| 10.0.0.0/8           | 10.0.0.0–10.255.255.255 | 16777216 | Private network | Used for local communications within a private network |
-| 172.16.0.0/12      | 172.16.0.0–172.31.255.255 | 1048576 | Private network | Used for local communications within a private network |
-| 192.168.0.0/16     | 192.168.0.0–192.168.255.255 | 65536 | Private network | Used for local communications within a private network |
+| 10.0.0.0/8           | 10.0.0.0<br>10.255.255.255 | 16.777.216 | Private network | Used for local communications within a private network |
+| 172.16.0.0/12      | 172.16.0.0<br>172.31.255.255 | 1.048.576 | Private network | Used for local communications within a private network |
+| 192.168.0.0/16     | 192.168.0.0<br>192.168.255.255 | 65.536 | Private network | Used for local communications within a private network |
 
 
 

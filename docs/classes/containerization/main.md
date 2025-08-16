@@ -1,7 +1,6 @@
+![It Works on My Machine](itworksonmymachine.png){ width="40%" align="right" }
+
 How to avoid the classical..
-
-![It Works on My Machine](itworksonmymachine.png){ width="50%" }
-
 
 The answer is: **CONTAINERIZATION**.
 

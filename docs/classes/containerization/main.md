@@ -95,7 +95,7 @@ This command will start all the services defined in the `compose.yaml` file, cre
 ``` mermaid
 flowchart LR
     user[User] -->|HTTP| web[Web]
-    subgraph myapp [172.17.0.0/16]
+    subgraph myapp [172.18.0.0/16]
         web[Web]
         app[App]
         db[(Database)]

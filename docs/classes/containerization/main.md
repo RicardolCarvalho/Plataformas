@@ -159,7 +159,7 @@ flowchart TB
     host1@{ shape: docs, label: "Host 1"} ---|Public IP| internet([Internet])
     host2@{ shape: docs, label: "Host 2"} ---|Public IP| internet([Internet])
     host3@{ shape: docs, label: "Host 3"} ---|Public IP| internet([Internet])
-    internet([Internet]) ---|Public IP| router1((Border Router<br>NAT<br>10.0.0.0/8))
+    internet((Internet)) ---|Public IP| router1((Border Router<br>NAT<br>10.0.0.0/8))
     router1 ---|Private IP| device1([Device 1])
     router1 ---|Private IP| device2([Device 2])
     router1 ---|Private IP| device3([Device 3])
@@ -172,9 +172,9 @@ flowchart TB
     router3 ---|Private IP| device7([Device 7])
     router4 ---|Private IP| device8([Device 8])
     router4 ---|Private IP| device9([Device 9])
-    classDef internet fill:#aaf
-    classDef router fill:#faa
-    classDef device fill:#afa
+    classDef internet fill:#ccf
+    classDef router fill:#fcc
+    classDef device fill:#cfc
     class internet internet
     class router1,router2,router3,router4 router
     class device1,device2,device3,device4,device5,device6,device7,device8,device9 device

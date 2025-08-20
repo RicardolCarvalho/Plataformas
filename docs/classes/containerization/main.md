@@ -61,23 +61,7 @@ In summary, Docker containers and virtual machines have different levels of abst
 Docker Compose is a tool for defining and running multi-container Docker applications. With Compose, you can use a YAML file to configure your application's services, networks, and volumes, making it easier to manage complex applications. All the services defined in the `compose.yaml` file can be started with a single command, allowing you to run multiple containers as a single application.
 
 ``` {.yaml title="compose.yaml"}
-name: myapp
-services:
-  web:
-    image: nginx
-    ports:
-      - "80:80"
-  app:
-    build: .
-    volumes:
-      - .:/app
-    depends_on:
-      - db
-  db:
-    image: postgres
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+--8<-- "docs/classes/containerization/compose-example.yaml"
 ```
 
 To run the application defined in the `compose.yaml` file, you can use the following command:
@@ -91,6 +75,7 @@ docker compose up -d --build # (1)!
 
 This command will start all the services defined in the `compose.yaml` file, creating a subnetwork for them to communicate with each other. You can then access the web service on port 80 of your host machine. The illustration below shows how the services are connected:
 
+<center>
 ``` mermaid
 flowchart LR
     user[User] -->|HTTP| web[Web]
@@ -102,6 +87,8 @@ flowchart LR
     web -->|API| app
     app -->|Connection| db
 ```
+<i>The above diagram illustrates how the user interacts with the web service, which in turn communicates with the application and database services within the defined Docker network.</i>
+</center>
 
 !!! tip "Environment Variables"
     

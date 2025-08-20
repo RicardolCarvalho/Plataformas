@@ -12,7 +12,7 @@ services:
       - "80:80"
 
   app:
-    build: .
+    image: openjdk:21-slim
     depends_on:
       - db
 

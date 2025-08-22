@@ -88,7 +88,7 @@
 
 [https://github.com/repo-classes/pma252.account](https://github.com/repo-classes/pma252.account){target="_blank"}
 
-[https://github.com/repo-classes/pma252.account-service](https://github.com/repo-classes/pma252.account-service){target="_blank"
+[https://github.com/repo-classes/pma252.account-service](https://github.com/repo-classes/pma252.account-service){target="_blank"}
 
 
 

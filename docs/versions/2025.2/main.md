@@ -86,27 +86,6 @@
 
 [https://github.com/repo-classes/pma.25.2](https://github.com/repo-classes/pma.25.2){target="_blank"}
 
-[https://github.com/repo-classes/pma252.account](https://github.com/repo-classes/pma252.account){target="_blank"}
-
-[https://github.com/repo-classes/pma252.account-service](https://github.com/repo-classes/pma252.account-service){target="_blank"}
-
-
-
-<!-- !!! Dev
-
-    | Microservice | Context | Interface | Service |
-    |-|-|-|-|
-    | Discovery | Infra |  | [platform.241.store.discovery](https://github.com/hsandmann/platform.241.store.discovery){target="_blank"} | 
-    | Gateway | Infra | | [platform.241.store.gateway](https://github.com/hsandmann/platform.241.store.gateway){target="_blank"} |
-    | Postgres | Database | | [platform.241.store.db](https://github.com/hsandmann/platform.241.store.db){target='_blank'} |
-    | Account | Business | [platform.241.store.account](https://github.com/hsandmann/platform.241.store.account){target="_blank"} | [platform.241.store.account-resource](https://github.com/hsandmann/platform.241.store.account-resource){target="_blank"} |
-    | Auth | Business | [platform.241.store.auth](https://github.com/hsandmann/platform.241.store.auth){target="_blank"} | [platform.241.store.auth-resource](https://github.com/hsandmann/platform.241.store.auth-resource){target="_blank"} |
-
-
-!!! Ops
-
-    | Description | Repositories | Commands |
-    |--|--|--|
-    | Docker Compose API | [platform.241.store.docker-api](https://github.com/hsandmann/platform.241.store.docker-api){target="_blank"} | `docker compose up --build`{.shell} <br> `docker compose down`{.shell} |
-    | Jenkins Pipelines | [platform.241.store.ops](https://github.com/hsandmann/platform.241.store.ops) |  `docker compose up --build`{.shell} <br> `docker compose down`{.shell} <br> [http://localhost:9000](http://localhost:9000){target='_blank'} |
- -->
+| Microservice | Interface | Implementation |
+|-|-|-|
+| Account | [pma252.account](https://github.com/repo-classes/pma252.account){target="_blank"} | [pma252.account-service](https://github.com/repo-classes/pma252.account-service){target="_blank"} |

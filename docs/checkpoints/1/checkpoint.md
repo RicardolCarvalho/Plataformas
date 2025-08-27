@@ -186,31 +186,6 @@ api/
     > mvn clean install
     ```
 
-<!--
-??? note "Account-Service"
-
-    ``` tree
-    api
-        account-service
-            src
-                main
-                    java
-                        store
-                            account
-                                AccountApplication.java
-                                AccountResource.java
-                                AccountService.java
-                                AccountRepository.java
-                                Account.java
-                                AccountModel.java
-                                AccountParser.java
-                    resources
-                        application.yaml
-            pom.xml
-            Dockerfile
-    ```
--->
-
 ## Account-Service
 
 ``` tree

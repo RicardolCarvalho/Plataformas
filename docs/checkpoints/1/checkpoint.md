@@ -158,7 +158,7 @@ api/
     === "pom.xml"
 
         ``` { .yaml .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account/refs/heads/main/pom.xml" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account/refs/heads/main/pom.xml"
         ```
 
     === "AccountController"

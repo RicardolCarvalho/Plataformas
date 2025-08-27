@@ -164,19 +164,19 @@ api/
     === "AccountController"
 
         ``` { .java title='AccountController.java' .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account/refs/heads/main/src/main/java/store/account/AccountController.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account/refs/heads/main/src/main/java/store/account/AccountController.java"
         ```
 
     === "AccountIn"
 
         ``` { .java title='AccountIn.java' .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account/refs/heads/main/src/main/java/store/account/AccountIn.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account/refs/heads/main/src/main/java/store/account/AccountIn.java"
         ```
 
     === "AccountOut"
 
         ``` { .java title='AccountOut.java' .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account/refs/heads/main/src/main/java/store/account/AccountOut.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account/refs/heads/main/src/main/java/store/account/AccountOut.java"
         ```
 
     <!-- termynal -->
@@ -242,7 +242,7 @@ api/
     === "pom.xml"
 
         ``` { .yaml .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/pom.xml" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/pom.xml"
         ```
 
     === "application.yaml"

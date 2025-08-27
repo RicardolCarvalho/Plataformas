@@ -179,6 +179,7 @@ api/
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account/refs/heads/main/src/main/java/store/account/AccountOut.java"
         ```
 
+
     <!-- termynal -->
 
     ``` { bash }

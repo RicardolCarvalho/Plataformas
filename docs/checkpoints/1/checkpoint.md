@@ -249,67 +249,67 @@ api/
     === "application.yaml"
 
         ``` { .yaml .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/resources/application.yaml" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/application.yaml"
         ```
 
     === "Account.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/java/store/account/Account.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/Account.java"
         ```
 
     === "AccountApplication.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/java/store/account/AccountApplication.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountApplication.java"
         ```
 
     === "AccountModel.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/java/store/account/AccountModel.java" -->
+        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountModel.java" -->
         ```
 
     === "AccountParser.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/java/store/account/AccountParser.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountParser.java"
         ```
 
     === "AccountRepository.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/java/store/account/AccountRepository.java" -->
+        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountRepository.java" -->
         ```
 
     === "AccountResource.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/java/store/account/AccountResource.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountResource.java"
         ```
 
     === "AccountService.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/java/store/account/AccountService.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountService.java"
         ```
 
     === "V2025.02.21.001__create_schema_account.sql"
 
         ``` { .sql .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/resources/db/migration/V2025.02.21.001__create_schema_account.sql" -->
+        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/db/migration/V2025.02.21.001__create_schema_account.sql" -->
         ```
 
     === "V2025.02.21.002__create_table_account.sql"
 
         ``` { .sql .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/src/main/resources/db/migration/V2025.02.21.002__create_table_account.sql" -->
+        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/db/migration/V2025.02.21.002__create_table_account.sql" -->
         ```
 
     === "Dockerfile"
 
         ``` { .dockerfile .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.account-service/refs/heads/main/Dockerfile" -->
+        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/Dockerfile" -->
         ```
 
 <!-- termynal -->

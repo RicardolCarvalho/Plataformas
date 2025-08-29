@@ -117,12 +117,12 @@ api/
 
 === "compose.yaml"
     ``` { .yaml .copy .select linenums="1" }
-    <!-- --8<-- "https://raw.githubusercontent.com/Insper/platform/refs/heads/main/api/compose.yaml" -->
+    --8<-- "https://raw.githubusercontent.com/repo-classes/pma.25.2/refs/heads/main/api/compose.yaml"
     ```
 
 === ".env"
     ``` { .sh .copy .select linenums="1" }
-    <!-- --8<-- "https://raw.githubusercontent.com/Insper/platform/refs/heads/main/api/.env" -->
+    --8<-- "https://raw.githubusercontent.com/repo-classes/pma.25.2/refs/heads/main/api/.env"
     ```
 
 <!-- termynal -->

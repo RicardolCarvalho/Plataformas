@@ -207,6 +207,8 @@ api/
                     application.yaml
                     db/
                         migration/
+                            V2025.08.29.001__create_schema.sql
+                            V2025.08.29.002__create_table_account.sql
         pom.xml
         Dockerfile
 ```

@@ -219,6 +219,12 @@ api/
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/pom.xml"
         ```
 
+    === "Dockerfile"
+
+        ``` { .dockerfile .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/Dockerfile"
+        ```
+
     === "application.yaml"
 
         ``` { .yaml .copy .select linenums="1" }
@@ -240,7 +246,7 @@ api/
     === "AccountModel.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountModel.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountModel.java"
         ```
 
     === "AccountParser.java"
@@ -252,7 +258,7 @@ api/
     === "AccountRepository.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountRepository.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountRepository.java"
         ```
 
     === "AccountResource.java"
@@ -267,23 +273,18 @@ api/
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/java/store/account/AccountService.java"
         ```
 
-    === "V2025.02.21.001__create_schema_account.sql"
+    === "V2025.08.29.001__create_schema.sql"
 
         ``` { .sql .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/db/migration/V2025.02.21.001__create_schema_account.sql" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.001__create_schema.sql"
         ```
 
-    === "V2025.02.21.002__create_table_account.sql"
+    === "V2025.08.29.002__create_table_account.sql"
 
         ``` { .sql .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/db/migration/V2025.02.21.002__create_table_account.sql" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.002__create_table_account.sql"
         ```
 
-    === "Dockerfile"
-
-        ``` { .dockerfile .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/Dockerfile" -->
-        ```
 
 <!-- termynal -->
 

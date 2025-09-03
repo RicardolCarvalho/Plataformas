@@ -209,6 +209,7 @@ api/
                         migration/
                             V2025.08.29.001__create_schema.sql
                             V2025.08.29.002__create_table_account.sql
+                            V2025.09.02.001__create_index_email.sql
         pom.xml
         Dockerfile
 ```
@@ -285,6 +286,12 @@ api/
 
         ``` { .sql .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.002__create_table_account.sql"
+        ```
+
+    === "V2025.09.02.001__create_index_email.sql"
+
+        ``` { .sql .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.account-service/refs/heads/main/src/main/resources/db/migration/V2025.09.02.001__create_index_email.sql"
         ```
 
 

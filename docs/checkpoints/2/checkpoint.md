@@ -48,25 +48,25 @@ api
     === "pom.xml"
 
         ``` { .yaml .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/pom.xml" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/pom.xml"
         ```
 
     === "application.yaml"
 
         ``` { .yaml .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/resources/application.yaml" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/resources/application.yaml"
         ```
 
     === "GatewayApplication.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/GatewayApplication.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/GatewayApplication.java"
         ```
 
     === "GatewayResource.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/GatewayResource.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/GatewayResource.java"
         ```
 
     === "CorsFilter.java"
@@ -78,5 +78,5 @@ api
     === "Dockerfile"
 
         ``` { .dockerfile .copy .select linenums="1" }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/Dockerfile" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/Dockerfile"
         ```

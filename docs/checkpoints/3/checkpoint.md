@@ -97,37 +97,37 @@ api
     === "pom.xml"
 
         ``` { .yaml .copy .select linenums="1" }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth/refs/heads/main/pom.xml"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth/refs/heads/main/pom.xml"
         ```
 
     === "AuthController.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth/refs/heads/main/src/main/java/store/auth/AuthController.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth/refs/heads/main/src/main/java/store/auth/AuthController.java"
         ```
 
     === "LoginIn.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth/refs/heads/main/src/main/java/store/auth/LoginIn.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth/refs/heads/main/src/main/java/store/auth/LoginIn.java"
         ```
 
     === "RegisterIn.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth/refs/heads/main/src/main/java/store/auth/RegisterIn.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth/refs/heads/main/src/main/java/store/auth/RegisterIn.java"
         ```
 
     === "SolveOut.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth/refs/heads/main/src/main/java/store/auth/SolveOut.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth/refs/heads/main/src/main/java/store/auth/SolveOut.java"
         ```
 
     === "TokenOut.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth/refs/heads/main/src/main/java/store/auth/TokenOut.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth/refs/heads/main/src/main/java/store/auth/TokenOut.java"
         ```
 
 
@@ -161,55 +161,55 @@ api
     === "pom.xml"
 
         ``` { .yaml .copy .select linenums="1" }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/pom.xml"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/pom.xml"
         ```
 
     === "application.yaml"
 
         ``` { .yaml .copy .select linenums="1" }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/src/main/resources/application.yaml"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/resources/application.yaml"
         ```
 
     === "AuthApplication.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/src/main/java/store/auth/AuthApplication.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/AuthApplication.java"
         ```
 
     === "AuthParser.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/src/main/java/store/auth/AuthParser.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/AuthParser.java"
         ```
 
     === "AuthResource.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/src/main/java/store/auth/AuthResource.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/AuthResource.java"
         ```
 
     === "AuthService.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/src/main/java/store/auth/AuthService.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/AuthService.java"
         ```
 
     === "JwtService.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/src/main/java/store/auth/JwtService.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/JwtService.java"
         ```
 
     === "Register.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/src/main/java/store/auth/Register.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/Register.java"
         ```
 
     === "Dockerfile"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.auth-service/refs/heads/main/Dockerfile"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/Dockerfile"
         ```
 
 
@@ -403,61 +403,61 @@ api
     === "pom.xml"
 
         ``` { .yaml .copy .select linenums="1" }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/pom.xml"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/pom.xml"
         ```
 
     === "application.yaml"
 
         ``` { .yaml .copy .select linenums="1" }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/resources/application.yaml"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/resources/application.yaml"
         ```
 
     === "GatewayApplication.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/GatewayApplication.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/GatewayApplication.java"
         ```
 
     === "GatewayResource.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/GatewayResource.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/GatewayResource.java"
         ```
 
     === "AuthorizationFilter.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/security/AuthorizationFilter.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/AuthorizationFilter.java"
         ```
 
     === "CorsFilter.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/security/CorsFilter.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/CorsFilter.java"
         ```
 
     === "RouterValidator.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/security/RouterValidator.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/RouterValidator.java"
         ```
 
     === "SolveOut.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/security/SolveOut.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/SolveOut.java"
         ```
 
     === "TokenOut.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/security/TokenOut.java"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/TokenOut.java"
         ```
 
     === "Dockerfile"
 
         ``` { .dockerfile .copy .select linenums="1" }
-        --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/Dockerfile"
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/Dockerfile"
         ```
 
 

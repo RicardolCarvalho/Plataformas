@@ -72,7 +72,7 @@ api
     === "CorsFilter.java"
 
         ``` { .java .copy .select linenums='1' }
-        <!-- --8<-- "https://raw.githubusercontent.com/hsandmann/insper.store.gateway-service/refs/heads/main/src/main/java/store/gateway/security/CorsFilter.java" -->
+        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/CorsFilter.java"
         ```
 
     === "Dockerfile"

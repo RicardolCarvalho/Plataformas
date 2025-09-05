@@ -149,7 +149,6 @@ api
                             AuthResource.java
                             AuthService.java
                             JwtService.java
-                            Register.java
             resources
                 application.yaml
         pom.xml
@@ -198,12 +197,6 @@ api
 
         ``` { .java .copy .select linenums='1' }
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/JwtService.java"
-        ```
-
-    === "Register.java"
-
-        ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/Register.java"
         ```
 
     === "Dockerfile"

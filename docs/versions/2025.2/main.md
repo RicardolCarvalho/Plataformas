@@ -15,7 +15,7 @@
 | :octicons-location-24: | :fontawesome-regular-calendar: | :fontawesome-regular-clock: |
 |-|:-:|:-:|
 | Aula | Qua. | 12h00 :fontawesome-solid-arrow-right-long: 14h00 |
-| Atendimento | Sex. | 10h00 :fontawesome-solid-arrow-right-long: 11h30 |
+| Atendimento | Sex. | 09h40 :fontawesome-solid-arrow-right-long: 11h10 |
 | Aula | Sex. | 12h00 :fontawesome-solid-arrow-right-long: 14h00 |
 
 

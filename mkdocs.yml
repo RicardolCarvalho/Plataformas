@@ -133,12 +133,12 @@ nav:
     - 8. Orchestration: classes/orchestration/main.md
     - 9. PaaS: classes/paas/main.md
     - Checkpoints:
-      - 1. CRUD: checkpoints/1/checkpoint.md
-      - 2. Gateway: checkpoints/2/checkpoint.md
-      - 3. Security: checkpoints/3/checkpoint.md
-      # - 4. DevOps: checkpoints/4/checkpoint.md
-      # - 5. Orchestration: checkpoints/5/checkpoint.md
-  
+      - 1. CRUD: checkpoints/1/main.md
+      - 2. Gateway: checkpoints/2/main.md
+      - 3. Security: checkpoints/3/main.md
+      - 4. DevOps: checkpoints/4/main.md
+      - 5. Orchestration: checkpoints/5/main.md
+
   - Exercises:
     - Individual:
       - 1. Product API: exercises/exercise2.md

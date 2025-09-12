@@ -87,7 +87,6 @@ api
                             AuthController.java
                             LoginIn.java
                             RegisterIn.java
-                            SolveOut.java
                             TokenOut.java
         pom.xml
 ```
@@ -118,12 +117,6 @@ api
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth/refs/heads/main/src/main/java/store/auth/RegisterIn.java"
         ```
 
-    === "SolveOut.java"
-
-        ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth/refs/heads/main/src/main/java/store/auth/SolveOut.java"
-        ```
-
     === "TokenOut.java"
 
         ``` { .java .copy .select linenums='1' }
@@ -145,7 +138,6 @@ api
                     store
                         auth
                             AuthApplication.java
-                            AuthParser.java
                             AuthResource.java
                             AuthService.java
                             JwtService.java
@@ -175,12 +167,6 @@ api
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/AuthApplication.java"
         ```
 
-    === "AuthParser.java"
-
-        ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/src/main/java/store/auth/AuthParser.java"
-        ```
-
     === "AuthResource.java"
 
         ``` { .java .copy .select linenums='1' }
@@ -205,6 +191,7 @@ api
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.auth-service/refs/heads/main/Dockerfile"
         ```
 
+---
 
 === "Register"
     
@@ -233,6 +220,8 @@ api
     Auth->>-User: returns 201 (TokenOut)
     ```
 
+---
+
 === "Login"
 
     ``` 
@@ -242,7 +231,7 @@ api
     Body
     ``` json
     {
-        "email": "acme@insper.edu.br",
+        "email": "acme@bussiness.com",
         "password": "123@321"
     }
     ```
@@ -264,6 +253,8 @@ api
     Auth->>-User: returns TokenOut
     User->>User: stores the token to use for the next requests
     ```
+
+---
 
 ## Security
 
@@ -383,8 +374,6 @@ api
                                 AuthorizationFilter.java
                                 CorsFilter.java
                                 RouterValidator.java
-                                SolveOut.java
-                                TokenOut.java
                 resources
                     application.yaml
         pom.xml
@@ -433,18 +422,6 @@ api
 
         ``` { .java .copy .select linenums='1' }
         --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/RouterValidator.java"
-        ```
-
-    === "SolveOut.java"
-
-        ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/SolveOut.java"
-        ```
-
-    === "TokenOut.java"
-
-        ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/repo-classes/pma252.gateway-service/refs/heads/main/src/main/java/store/gateway/security/TokenOut.java"
         ```
 
     === "Dockerfile"

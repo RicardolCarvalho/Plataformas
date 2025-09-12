@@ -1,4 +1,35 @@
 
+Now, the user wants to create an API that allows the user to convert between currencies. The API should use a third-party API to get the exchange rates. Note, this microservice ==HAVE TO== be code in Python.
+
+``` mermaid
+flowchart LR
+    subgraph api [Trusted Layer]
+        direction TB
+        gateway --> account
+        gateway --> auth
+        account --> db@{ shape: cyl, label: "Database" }
+        auth --> account
+        gateway e1@==> exchange:::red
+        gateway ==> product
+        gateway ==> order
+        product ==> db
+        order ==> db
+        order ==> product
+    end
+    exchange e3@==> 3partyapi:::green@{label: "3rd-party API"}
+    internet e2@==>|request| gateway
+    e1@{ animate: true }
+    e2@{ animate: true }
+    e3@{ animate: true }
+    classDef red fill:#fcc
+    classDef green fill:#cfc
+    click product "#product-api" "Product API"
+```
+
+!!! warning "Attention"
+
+    **To consume the API, the user must be authenticated.**
+
 
 Using FastAPI[^1] (or other framework) on Python :material-information-outline:{ title="Python is mandatory!" }, create a REST API that allows the user to convert between currencies. The API should have the following endpoints:
 
@@ -34,32 +65,6 @@ Or, you can scrape the data from a website.
 
     You can use the `requests` library to make HTTP requests to the third-party API.
 
-!!! warning "Attention"
-
-    **To consume the API, the user must be authenticated.**
-
-!!! danger "Gateway"
-
-    **This API should be consumed through the Gateway of the platform.**
-
-    ``` mermaid
-    flowchart LR
-        subgraph api [Trusted Layer]
-            direction TB
-            gateway --> account
-            gateway --> auth
-            account --> db@{ shape: cyl, label: "Database" }
-            auth --> account
-            gateway e1@==> exchange:::red
-            e1@{ animate: true }
-        end
-        exchange e2@==> 3partyapi@{label: "3rd-party API"}
-        internet e3@==>|request| gateway
-        e2@{ animate: true }
-        e3@{ animate: true }
-        classDef red fill:#fcc
-        click exchange "#exchange-api" "Exchange API"
-    ```
 
 ---
 

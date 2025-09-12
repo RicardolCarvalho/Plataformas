@@ -141,11 +141,11 @@ nav:
 
   - Exercises:
     - Individual:
-      - 1. Product API: exercises/exercise2.md
-      - 2. Order API: exercises/exercise3.md
-      - 3. Exchange API: exercises/exercise1.md
-      - 4. Jenkins: exercises/exercise4.md
-      - 5. MiniKube: exercises/exercise5.md
+      - 1. Product API: exercises/product.md
+      - 2. Order API: exercises/order.md
+      - 3. Exchange API: exercises/exchange.md
+      - 4. Jenkins: exercises/jenkins.md
+      - 5. MiniKube: exercises/minikube.md
       - Bottlenecks: exercises/bottlenecks/bottlenecks.md
     - Project: exercises/project/project.md
     

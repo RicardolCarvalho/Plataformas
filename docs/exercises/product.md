@@ -10,14 +10,12 @@ flowchart LR
         gateway --> auth
         account --> db@{ shape: cyl, label: "Database" }
         auth --> account
-        gateway --> exchange
         gateway e5@==> product:::red
         gateway e6@==> order
         product e2@==> db
         order e3@==> db
         order e4@==> product
     end
-    exchange --> 3partyapi@{label: "3rd-party API"}
     internet e1@==>|request| gateway
     e1@{ animate: true }
     e2@{ animate: true }

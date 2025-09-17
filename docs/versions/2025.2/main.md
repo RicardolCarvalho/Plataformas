@@ -8,7 +8,17 @@
 
 ## Students
 
-<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBrh2n-7jhuIIntmYyeaxwQBOWj4biWko_6bpci6XpZxVGDFJ-g43ehPepqxKbNjxz0fqr6ndWf1wI/pubhtml?gid=1397413588&amp;single=true&amp;widget=false&amp;headers=false" width="100%" height="720px"></iframe> -->
+!!! warning "Group Registration"
+
+    Deadline to register: ==**September 24, 2025**==.
+
+    :material-account-group: Teams from 2 up to 3 members.
+
+    Form to register student groups: [https://forms.gle/B2QuGVsacetXfkeg7](https://forms.gle/B2QuGVsacetXfkeg7){target="_blank"}.
+
+    This is ==MANDATORY== to organize the teams and the AWS accounts.
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqrV3biuxQAPpWqWXcOFpH3Aq5png2oP-dd-QNmU6njaTxispZ9CsOilHPZZcovL9dxTdrPLk3h7Uv/pubhtml?gid=1397413588&amp;single=false&amp;widget=false&amp;headers=false" width="100%" height="460px"></iframe>
 
 ## Meetings
 

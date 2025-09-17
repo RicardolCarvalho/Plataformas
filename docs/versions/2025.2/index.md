@@ -64,9 +64,9 @@
 
     | Tarefa | Descrição | Peso |
     |-|-|-:|
-    | Checkpoint 1 | CRUD Microservice | 10% |
-    | Checkpoint 2 | Gateway | 15% |
-    | Checkpoint 3 | Security | 15% |
+    | Checkpoint 1 | Product | 15% |
+    | Checkpoint 2 | Order | 15% |
+    | Checkpoint 3 | Exchange | 10% |
     | Checkpoint 4 | DevOps | 15% |
     | Checkpoint 5 | Orchestration | 15% |
     | Bootnecks | InMemory Database<br>Message Queues<br>Observability<br>Code quality<br>OAuth2<br>Payments (sandboxes) | 20% |

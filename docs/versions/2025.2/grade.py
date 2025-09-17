@@ -4,8 +4,8 @@ from io import StringIO
 fig, ax = plt.subplots(1, 2, figsize=(10, 5))
 
 ax[0].pie(
-    [10, 15, 15, 15, 15, 20, 10],
-    labels=["CRUD", "Gateway", "Security", "DevOps", "Orchestration", "Bootnecks", "Documentation"],
+    [15, 15, 10, 15, 15, 20, 10],
+    labels=["Product", "Order", "Exchange", "DevOps", "Orchestration", "Bootnecks", "Documentation"],
     colors=["mediumturquoise", "lightseagreen", "turquoise", "aquamarine", "mediumaquamarine", "mediumspringgreen", "springgreen"],
     autopct='%1.0f%%',
     startangle=90)

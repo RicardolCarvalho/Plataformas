@@ -18,6 +18,10 @@
 
     This is ==MANDATORY== to organize the teams and the AWS accounts.
 
+    !!! danger "Template"
+    
+    Template to deliver the project: [https://hsandmann.github.io/documentation.template/](https://hsandmann.github.io/documentation.template/){target="_blank"}.
+
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqrV3biuxQAPpWqWXcOFpH3Aq5png2oP-dd-QNmU6njaTxispZ9CsOilHPZZcovL9dxTdrPLk3h7Uv/pubhtml?gid=1397413588&amp;single=false&amp;widget=false&amp;headers=false" width="100%" height="460px"></iframe>
 
 ## Meetings

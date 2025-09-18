@@ -4,7 +4,9 @@
 
 ## Instructor
 
-| [:material-web:](https://hsandmann.github.io/){:target="_blank"} [:simple-github:](https://github.com/hsandmann){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"} [:fontawesome-regular-envelope:](mailto:humberto.sandmann@espm.br){target='_blank'} | Humberto Sandmann |
+| [:material-web:](https://hsandmann.github.io/){:target="_blank"} [:simple-github:](https://github.com/hsandmann){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"} [:fontawesome-regular-envelope:](mailto:hsandmann@ieee.org){target='_blank'} | Humberto Sandmann |
+
+| [:simple-github:](https://github.com/giuvallente){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/giulia-gomes-vallente-1b06ba302/){:target="_blank"} Student Assistant | Giúlia Gomes Vallente |
 
 ## Students
 

@@ -1,6 +1,5 @@
-# 2025.2 - winter
 
-<!-- ![Class 2025.2](../assets/images/2025.2/2025.2.jpg){ .rounded-corners } -->
+<!-- ![Class 2025.2](2025.2.jpg){ .rounded-corners } -->
 
 ## Instructors
 

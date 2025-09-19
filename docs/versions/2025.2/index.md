@@ -9,19 +9,32 @@
 
 ## Students
 
-!!! warning "Group Registration"
 
-    Deadline to register: ==**September 24, 2025**==.
-
-    :material-account-group: Teams from 2 up to 3 members.
-
-    Form to register student groups: [https://forms.gle/B2QuGVsacetXfkeg7](https://forms.gle/B2QuGVsacetXfkeg7){target="_blank"}.
-
-    This is ==MANDATORY== to organize the teams and the AWS accounts.
-
-    !!! danger "Template"
-    
+!!! danger "Template"
+        
     Template to deliver the project: [https://hsandmann.github.io/documentation.template/](https://hsandmann.github.io/documentation.template/){target="_blank"}.
+
+<div class="grid cards" markdown>
+
+-   !!! warning "Individual"
+
+        Deadline to register: ==**September 24, 2025**==.
+
+        :material-account: Individual registration.
+
+        Form to register individual students: [https://forms.gle/mG6riaBW99vHxRpc7](https://forms.gle/mG6riaBW99vHxRpc7){target="_blank"}.
+
+-   !!! warning "Group"
+
+        Deadline to register: ==**September 24, 2025**==.
+
+        :material-account-group: Teams from 2 up to 3 members.
+
+        Form to register student groups: [https://forms.gle/B2QuGVsacetXfkeg7](https://forms.gle/B2QuGVsacetXfkeg7){target="_blank"}.
+
+        This is ==MANDATORY== to organize the teams and the AWS accounts.
+
+</div>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqrV3biuxQAPpWqWXcOFpH3Aq5png2oP-dd-QNmU6njaTxispZ9CsOilHPZZcovL9dxTdrPLk3h7Uv/pubhtml?gid=1397413588&amp;single=false&amp;widget=false&amp;headers=false" width="100%" height="460px"></iframe>
 

@@ -1,26 +1,40 @@
-# 2025.2 - winter
 
-<!-- ![Class 2025.2](../assets/images/2025.2/2025.2.jpg){ .rounded-corners } -->
+<!-- ![Class 2025.2](2025.2.jpg){ .rounded-corners } -->
 
-## Instructor
+## Instructors
 
-| [:material-web:](https://hsandmann.github.io/){:target="_blank"} [:simple-github:](https://github.com/hsandmann){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"} [:fontawesome-regular-envelope:](mailto:humberto.sandmann@espm.br){target='_blank'} | Humberto Sandmann |
+| [:material-web:](https://hsandmann.github.io/){:target="_blank"} [:simple-github:](https://github.com/hsandmann){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"} Instructor | Humberto Sandmann |
+
+| [:simple-github:](https://github.com/giuvallente){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/giulia-gomes-vallente-1b06ba302/){:target="_blank"} Student Assistant | Giúlia Gomes Vallente |
 
 ## Students
 
-!!! warning "Group Registration"
 
-    Deadline to register: ==**September 24, 2025**==.
-
-    :material-account-group: Teams from 2 up to 3 members.
-
-    Form to register student groups: [https://forms.gle/B2QuGVsacetXfkeg7](https://forms.gle/B2QuGVsacetXfkeg7){target="_blank"}.
-
-    This is ==MANDATORY== to organize the teams and the AWS accounts.
-
-    !!! danger "Template"
-    
+!!! danger "Template"
+        
     Template to deliver the project: [https://hsandmann.github.io/documentation.template/](https://hsandmann.github.io/documentation.template/){target="_blank"}.
+
+<div class="grid cards" markdown>
+
+-   !!! warning "Individual"
+
+        Deadline to register: ==**September 24, 2025**==.
+
+        :material-account: Individual registration.
+
+        Form to register individual students: [https://forms.gle/mG6riaBW99vHxRpc7](https://forms.gle/mG6riaBW99vHxRpc7){target="_blank"}.
+
+-   !!! warning "Group"
+
+        Deadline to register: ==**September 24, 2025**==.
+
+        :material-account-group: Teams from 2 up to 3 members.
+
+        Form to register student groups: [https://forms.gle/B2QuGVsacetXfkeg7](https://forms.gle/B2QuGVsacetXfkeg7){target="_blank"}.
+
+        This is ==MANDATORY== to organize the teams and the AWS accounts.
+
+</div>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqrV3biuxQAPpWqWXcOFpH3Aq5png2oP-dd-QNmU6njaTxispZ9CsOilHPZZcovL9dxTdrPLk3h7Uv/pubhtml?gid=1397413588&amp;single=false&amp;widget=false&amp;headers=false" width="100%" height="460px"></iframe>
 
@@ -64,9 +78,9 @@
 
     | Tarefa | Descrição | Peso |
     |-|-|-:|
-    | Checkpoint 1 | CRUD Microservice | 10% |
-    | Checkpoint 2 | Gateway | 15% |
-    | Checkpoint 3 | Security | 15% |
+    | Checkpoint 1 | Product | 15% |
+    | Checkpoint 2 | Order | 15% |
+    | Checkpoint 3 | Exchange | 10% |
     | Checkpoint 4 | DevOps | 15% |
     | Checkpoint 5 | Orchestration | 15% |
     | Bootnecks | InMemory Database<br>Message Queues<br>Observability<br>Code quality<br>OAuth2<br>Payments (sandboxes) | 20% |
